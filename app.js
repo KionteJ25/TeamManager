@@ -13,8 +13,6 @@ const render = require("./lib/htmlRenderer");
  const teamMembers = [];
 const arrayID = [];
 
-// Write code to use inquirer to gather information about the development team members,
-// and to create objects for each team member (using the correct classes as blueprints!)
 function appMenu() {
     function createManager() {
         inquirer.prompt([
@@ -180,7 +178,6 @@ function appMenu() {
             const engineer = new Intern(answers.internName, answers.internId, answers.internEmail, answers.internSchool)
             teamMembers.push(intern)
             arrayId.push(answers.internId)
-            // run a function here that creates the entire "team" prompting you to create another employee
         });
     }
 
